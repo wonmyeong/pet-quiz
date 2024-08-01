@@ -231,11 +231,11 @@ quiz_mode = st.selectbox(
 
 # 선택한 주제에 따라 파일 경로 설정
 if quiz_mode == "반려견 건강":
-    file_path = ".cache/files/health_quiz.txt"
+    file_path = "health_quiz.txt"
 elif quiz_mode == "반려견 행동":
-    file_path = ".cache/files/behavior_quiz.txt"
+    file_path = "behavior_quiz.txt"
 else:
-    file_path = ".cache/files/knowledge_quiz.txt"
+    file_path = "knowledge_quiz.txt"
 
 # 파일 내용을 읽어옴
 with open(file_path, "rb") as file:
